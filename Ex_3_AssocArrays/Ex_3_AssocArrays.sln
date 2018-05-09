@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Phonebok", "Phonebok\Phoneb
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhonebookUpgrade", "PhonebookUpgrade\PhonebookUpgrade.csproj", "{20E76D1B-A896-41DF-BDC9-0BE8F57BAC68}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PopulationCounter", "PopulationCounter\PopulationCounter.csproj", "{03498853-FFCF-4434-8B11-0CDA673B4D31}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
@@ -31,5 +33,9 @@ Global
 		{20E76D1B-A896-41DF-BDC9-0BE8F57BAC68}.Debug|x86.Build.0 = Debug|x86
 		{20E76D1B-A896-41DF-BDC9-0BE8F57BAC68}.Release|x86.ActiveCfg = Release|x86
 		{20E76D1B-A896-41DF-BDC9-0BE8F57BAC68}.Release|x86.Build.0 = Release|x86
+		{03498853-FFCF-4434-8B11-0CDA673B4D31}.Debug|x86.ActiveCfg = Debug|x86
+		{03498853-FFCF-4434-8B11-0CDA673B4D31}.Debug|x86.Build.0 = Debug|x86
+		{03498853-FFCF-4434-8B11-0CDA673B4D31}.Release|x86.ActiveCfg = Release|x86
+		{03498853-FFCF-4434-8B11-0CDA673B4D31}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 EndGlobal
