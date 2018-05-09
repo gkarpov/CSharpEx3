@@ -1,0 +1,35 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CountrealNum", "CountrealNum\CountrealNum.csproj", "{B23FD50A-1F42-486F-B5E7-AC727FDF9E21}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OddAppears", "OddAppears\OddAppears.csproj", "{ED614001-D4D0-4667-B614-754DFF3B368E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Phonebok", "Phonebok\Phonebok.csproj", "{4A43EA23-3A3C-4715-B824-587413FD5C04}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhonebookUpgrade", "PhonebookUpgrade\PhonebookUpgrade.csproj", "{20E76D1B-A896-41DF-BDC9-0BE8F57BAC68}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B23FD50A-1F42-486F-B5E7-AC727FDF9E21}.Debug|x86.ActiveCfg = Debug|x86
+		{B23FD50A-1F42-486F-B5E7-AC727FDF9E21}.Debug|x86.Build.0 = Debug|x86
+		{B23FD50A-1F42-486F-B5E7-AC727FDF9E21}.Release|x86.ActiveCfg = Release|x86
+		{B23FD50A-1F42-486F-B5E7-AC727FDF9E21}.Release|x86.Build.0 = Release|x86
+		{ED614001-D4D0-4667-B614-754DFF3B368E}.Debug|x86.ActiveCfg = Debug|x86
+		{ED614001-D4D0-4667-B614-754DFF3B368E}.Debug|x86.Build.0 = Debug|x86
+		{ED614001-D4D0-4667-B614-754DFF3B368E}.Release|x86.ActiveCfg = Release|x86
+		{ED614001-D4D0-4667-B614-754DFF3B368E}.Release|x86.Build.0 = Release|x86
+		{4A43EA23-3A3C-4715-B824-587413FD5C04}.Debug|x86.ActiveCfg = Debug|x86
+		{4A43EA23-3A3C-4715-B824-587413FD5C04}.Debug|x86.Build.0 = Debug|x86
+		{4A43EA23-3A3C-4715-B824-587413FD5C04}.Release|x86.ActiveCfg = Release|x86
+		{4A43EA23-3A3C-4715-B824-587413FD5C04}.Release|x86.Build.0 = Release|x86
+		{20E76D1B-A896-41DF-BDC9-0BE8F57BAC68}.Debug|x86.ActiveCfg = Debug|x86
+		{20E76D1B-A896-41DF-BDC9-0BE8F57BAC68}.Debug|x86.Build.0 = Debug|x86
+		{20E76D1B-A896-41DF-BDC9-0BE8F57BAC68}.Release|x86.ActiveCfg = Release|x86
+		{20E76D1B-A896-41DF-BDC9-0BE8F57BAC68}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+EndGlobal
