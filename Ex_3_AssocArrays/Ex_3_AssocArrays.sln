@@ -11,6 +11,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhonebookUpgrade", "Phonebo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PopulationCounter", "PopulationCounter\PopulationCounter.csproj", "{03498853-FFCF-4434-8B11-0CDA673B4D31}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LogAggreg", "LogAggreg\LogAggreg.csproj", "{5310F286-6949-4AAE-BB3A-678A1AD8B2DC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LegendaryFarming", "LegendaryFarming\LegendaryFarming.csproj", "{C13518F3-C921-4B92-A789-DF2565222E40}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DragonArmy", "DragonArmy\DragonArmy.csproj", "{003CE48F-E5AA-4486-B3C6-B94247BE284C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
@@ -37,5 +43,17 @@ Global
 		{03498853-FFCF-4434-8B11-0CDA673B4D31}.Debug|x86.Build.0 = Debug|x86
 		{03498853-FFCF-4434-8B11-0CDA673B4D31}.Release|x86.ActiveCfg = Release|x86
 		{03498853-FFCF-4434-8B11-0CDA673B4D31}.Release|x86.Build.0 = Release|x86
+		{5310F286-6949-4AAE-BB3A-678A1AD8B2DC}.Debug|x86.ActiveCfg = Debug|x86
+		{5310F286-6949-4AAE-BB3A-678A1AD8B2DC}.Debug|x86.Build.0 = Debug|x86
+		{5310F286-6949-4AAE-BB3A-678A1AD8B2DC}.Release|x86.ActiveCfg = Release|x86
+		{5310F286-6949-4AAE-BB3A-678A1AD8B2DC}.Release|x86.Build.0 = Release|x86
+		{C13518F3-C921-4B92-A789-DF2565222E40}.Debug|x86.ActiveCfg = Debug|x86
+		{C13518F3-C921-4B92-A789-DF2565222E40}.Debug|x86.Build.0 = Debug|x86
+		{C13518F3-C921-4B92-A789-DF2565222E40}.Release|x86.ActiveCfg = Release|x86
+		{C13518F3-C921-4B92-A789-DF2565222E40}.Release|x86.Build.0 = Release|x86
+		{003CE48F-E5AA-4486-B3C6-B94247BE284C}.Debug|x86.ActiveCfg = Debug|x86
+		{003CE48F-E5AA-4486-B3C6-B94247BE284C}.Debug|x86.Build.0 = Debug|x86
+		{003CE48F-E5AA-4486-B3C6-B94247BE284C}.Release|x86.ActiveCfg = Release|x86
+		{003CE48F-E5AA-4486-B3C6-B94247BE284C}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 EndGlobal

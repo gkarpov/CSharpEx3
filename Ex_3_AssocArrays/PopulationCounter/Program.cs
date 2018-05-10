@@ -9,12 +9,12 @@ namespace PopulationCounter
     {
         static void Main(string[] args)
         {
-            var input = new List<string>();
+            List<string> input = new List<string>();
 
-            var cntr = new Dictionary<string, SortedDictionary<int, string>>();
+            var cntr = new Dictionary<string, SortedDictionary<string, long>>();
 
             //countries sum populations
-            var cntsm = new SortedDictionary<int, string>();
+            var cntsm = new SortedDictionary<string, long>();
 
             do
             {
@@ -23,32 +23,40 @@ namespace PopulationCounter
                 if (input[0] == "report")
                     break;
 
-                var tmp = new SortedDictionary<int, string>();
+                var tmp = new SortedDictionary<string, long>();
 
-                tmp[int.Parse(input[2])] = input[0];
+                if (cntr.ContainsKey(input[1]))
+                    tmp = cntr[input[1]];
+                tmp.Add(input[0], long.Parse(input[2]));
                 cntr[input[1]] = tmp;
-                
+
 
             } while (true);
 
-            foreach(var cn in cntr)
+            foreach (var cn in cntr)
             {
-                int sm = 0;
+                long sm = 0;
                 foreach (var tsm in cn.Value)
-                    sm += tsm.Key;
+                    sm += tsm.Value;
 
-                cntsm[sm] = cn.Key;
+                cntsm[cn.Key] = sm;
             }
 
-            //printing results
-            //foreach(var cn in cntsm)
-            for (int i = 0; i < cntsm.Count;i++)
+            var sortedDict = from entry in cntsm orderby entry.Value descending select entry;
+            //var myList = cntsm.ToList();
+
+
+            //prlonging results
+            foreach (var cn in sortedDict)
             {
-                Console.WriteLine("{0} (total population: {1})}", cntsm.Values.ElementAt(i), cntsm.Keys.ElementAt(i));
-                foreach(var tn in cntr[cn.Value])
-                    Console.WriteLine("=>{0}: {1}", tn.Value, tn.Key);
+                string twn = cn.Key;
+                long pop = cn.Value;
+                Console.WriteLine("{0} (total population: {1})", twn, pop);
+                var sortedDict2 = from entry in cntr[twn] orderby entry.Value descending select entry;
+                foreach (var tn in sortedDict2)
+                    Console.WriteLine("=>{0}: {1}", tn.Key, tn.Value);
             }
-                
+
         }
     }
 }
