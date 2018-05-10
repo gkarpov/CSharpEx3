@@ -12,6 +12,7 @@ namespace HandsOfCards
             var input = new List<string>();
             string name = "";
             var cards = new List<string>();
+            var flinpt = new Dictionary<string, string>();
             var perspoints = new Dictionary<string, int>();
 
             do
@@ -23,20 +24,31 @@ namespace HandsOfCards
 
                 name = input[0];
 
-                if (!perspoints.ContainsKey(name))
-                    perspoints[name] = 0;
+                if (!flinpt.ContainsKey(name))
+                    flinpt[name] = input[1];
+                else
+                    flinpt[name] = flinpt[name] + "," + input[1];
+            
+            } while (true);
+
+
+            foreach (var obj in flinpt)
+            {
                 
-                cards = input[1].Split(',').ToList();
+                if (!perspoints.ContainsKey(obj.Key))
+                    perspoints[obj.Key] = 0;
+
+                cards = obj.Value.Split(',').ToList();
 
                 //eleminate dublicates
                 for (int i = 0; i < cards.Count - 1; i++)
                 {
 
-                    for (int k = cards.Count-1; k > i; k--)
+                    for (int k = cards.Count - 1; k > i; k--)
                         if (cards[k] == cards[i])
                             cards.RemoveAt(k);
                 }
-                
+
                 foreach (var card in cards)
                 {
                     int sum = 0;
@@ -62,13 +74,16 @@ namespace HandsOfCards
                     }
                     else
                     {
-                        sum += card[1];
+                        if (card[1] == '1' && card[2] == '0')
+                            sum += 10;
+                        else
+                            sum += (int)card[1] - 48;
                     }
 
                     switch ((char)card[2])
                     {
                         case 'S':
-                            sum*=4;
+                            sum *= 4;
                             break;
                         case 'H':
                             sum *= 3;
@@ -79,17 +94,39 @@ namespace HandsOfCards
                         case 'C':
                             sum *= 1;
                             break;
+                        case '0':
+                            switch ((char)card[3])
+                            {
+                                case 'S':
+                                    sum *= 4;
+                                    break;
+                                case 'H':
+                                    sum *= 3;
+                                    break;
+                                case 'D':
+                                    sum *= 2;
+                                    break;
+                                case 'C':
+                                    sum *= 1;
+                                    break;
+                                default:
+                                    break;
+                            }
+                            break;
                         default:
                             break;
                     }
 
-                    perspoints[name] += sum;
+                    perspoints[obj.Key] += sum;
 
-                }
+                }            
+            }
 
-            } while (true);
-            
-            foreach(var pers in perspoints)
+
+
+
+
+            foreach (var pers in perspoints)
                 Console.WriteLine("{0}: {1}", pers.Key, pers.Value);
 
         }

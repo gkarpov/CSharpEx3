@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FixEmails", "FixEmails\FixE
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HandsOfCards", "HandsOfCards\HandsOfCards.csproj", "{CE8FE48B-9F70-4E23-B42C-A73920551E1C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserLog", "UserLog\UserLog.csproj", "{972B8D01-A431-466E-9BA1-81DD5970E213}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PopulationCounter", "PopulationCounter\PopulationCounter.csproj", "{C6E1F82A-E8EE-4244-9CFD-F995EBCF4B2B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
@@ -25,6 +29,14 @@ Global
 		{CE8FE48B-9F70-4E23-B42C-A73920551E1C}.Debug|x86.Build.0 = Debug|x86
 		{CE8FE48B-9F70-4E23-B42C-A73920551E1C}.Release|x86.ActiveCfg = Release|x86
 		{CE8FE48B-9F70-4E23-B42C-A73920551E1C}.Release|x86.Build.0 = Release|x86
+		{972B8D01-A431-466E-9BA1-81DD5970E213}.Debug|x86.ActiveCfg = Debug|x86
+		{972B8D01-A431-466E-9BA1-81DD5970E213}.Debug|x86.Build.0 = Debug|x86
+		{972B8D01-A431-466E-9BA1-81DD5970E213}.Release|x86.ActiveCfg = Release|x86
+		{972B8D01-A431-466E-9BA1-81DD5970E213}.Release|x86.Build.0 = Release|x86
+		{C6E1F82A-E8EE-4244-9CFD-F995EBCF4B2B}.Debug|x86.ActiveCfg = Debug|x86
+		{C6E1F82A-E8EE-4244-9CFD-F995EBCF4B2B}.Debug|x86.Build.0 = Debug|x86
+		{C6E1F82A-E8EE-4244-9CFD-F995EBCF4B2B}.Release|x86.ActiveCfg = Release|x86
+		{C6E1F82A-E8EE-4244-9CFD-F995EBCF4B2B}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
